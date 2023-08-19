@@ -1,8 +1,10 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  height: 100vh;
+  background: linear-gradient(to right, #d2bdf4, #8e2dee);
 }
 
 .App {
@@ -10,7 +12,8 @@ body {
   margin: 2em auto;
   padding: 1em;
   background-color: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
 h1 {
@@ -18,6 +21,7 @@ h1 {
   color: #333;
 }
 
+/* Table styles */
 .table {
   margin: 1em 0;
 }
@@ -36,6 +40,7 @@ th, td {
   text-align: left;
 }
 
+/* Input styles */
 input {
   width: 100%;
   padding: 8px;
@@ -44,19 +49,32 @@ input {
   border-radius: 4px;
 }
 
+/* Button styles */
 button, .btn {
   padding: 10px 15px;
   margin: 10px 0;
   border: none;
-  background-color: #007bff;
+  background-color: #00d9ff;
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 button:hover, .btn:hover {
-  background-color: #0056b3;
+  background-color: #dcb57b;
+  color: black;
 }
+
 .btn-primary {
   margin-left: 10px;
+  text-decoration: none;
+}
+
+/* Canvas  */
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
