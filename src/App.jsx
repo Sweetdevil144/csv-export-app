@@ -1,5 +1,5 @@
 import React from 'react';
-import DynamicTable from './DynamicTable';
+import DynamicTable from './components/DynamicTable';
 
 function App() {
     return (
